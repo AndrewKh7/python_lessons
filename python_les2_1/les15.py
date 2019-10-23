@@ -37,3 +37,13 @@ buf.add(7, 8, 9, 10)
 print(buf.get_current_part())
 buf.add(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1) 
 print(buf.get_current_part() )
+
+
+
+
+class A:
+     val = 1
+     def foo(self):
+             A.val +=10
+     def bar(self):
+             self.val += 1
