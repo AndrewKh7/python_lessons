@@ -1,9 +1,12 @@
-s,t = (input() for _ in range(2))
+s, t = (input() for _ in range(2))
 cnt = 0
-while len(s) >= len(t):
+
+while len(s) > len(t):
     i = s.find(t)
     if i == -1:
         break
     cnt += 1
     s = s[i+1:]
+if s == t: cnt += 1
+
 print(cnt)
